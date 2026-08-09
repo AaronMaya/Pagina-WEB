@@ -1,0 +1,401 @@
+/* =========================================
+   CATÁLOGO - HERO
+========================================= */
+
+.catalog-hero {
+
+    min-height: 70vh;
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    color: var(--color-white);
+
+    background-image:
+        url('../images/hero/tablas.jpg');
+
+    background-size: cover;
+
+    background-position: center;
+
+}
+
+.catalog-hero-overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        rgba(0, 0, 0, 0.5);
+
+}
+
+.catalog-hero-content {
+
+    position: relative;
+
+    z-index: 1;
+
+    width: min(
+        90%,
+        800px
+    );
+
+}
+
+.catalog-hero h1 {
+
+    font-family: var(--font-title);
+
+    font-size: clamp(
+        55px,
+        7vw,
+        90px
+    );
+
+    line-height: 1;
+
+    font-weight: 500;
+
+    margin: 20px 0;
+
+}
+
+.catalog-hero h1 span {
+
+    display: block;
+
+    color: var(--color-rose);
+
+    font-style: italic;
+
+}
+
+.catalog-hero p {
+
+    max-width: 600px;
+
+    margin: auto;
+
+    font-weight: 300;
+
+}
+
+
+/* =========================================
+   INTRO CATÁLOGO
+========================================= */
+
+.catalog-intro {
+
+    text-align: center;
+
+}
+
+.catalog-intro .container {
+
+    max-width: 800px;
+
+}
+
+.catalog-intro h2 {
+
+    margin: 25px 0;
+
+    font-family: var(--font-title);
+
+    font-size: clamp(
+        40px,
+        5vw,
+        65px
+    );
+
+    font-weight: 500;
+
+    line-height: 1.15;
+
+}
+
+.catalog-intro h2 em {
+
+    display: block;
+
+    color: var(--color-rose);
+
+}
+
+.catalog-intro p {
+
+    max-width: 600px;
+
+    margin: auto;
+
+    color: #666;
+
+}
+
+
+/* =========================================
+   PRODUCTOS
+========================================= */
+
+.products {
+
+    background-color: #EFE7DF;
+
+}
+
+.products-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 50px 30px;
+
+}
+
+.product-card {
+
+    background-color:
+        var(--color-background);
+
+    overflow: hidden;
+
+    transition:
+        transform 0.4s ease,
+        box-shadow 0.4s ease;
+
+}
+
+.product-card:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 20px 50px
+        rgba(0, 0, 0, 0.1);
+
+}
+
+.product-image {
+
+    height: 500px;
+
+    overflow: hidden;
+
+}
+
+.product-image img {
+
+    height: 100%;
+
+    object-fit: cover;
+
+    transition:
+        transform 0.7s ease;
+
+}
+
+.product-card:hover
+.product-image img {
+
+    transform: scale(1.05);
+
+}
+
+.product-content {
+
+    padding: 35px;
+
+}
+
+.product-number {
+
+    font-family: var(--font-title);
+
+    color: var(--color-rose);
+
+    font-size: 15px;
+
+}
+
+.product-content h2 {
+
+    margin: 8px 0 15px;
+
+    font-family: var(--font-title);
+
+    font-size: 34px;
+
+    font-weight: 500;
+
+}
+
+.product-content p {
+
+    color: #666;
+
+    font-size: 14px;
+
+    max-width: 500px;
+
+    margin-bottom: 25px;
+
+}
+
+
+/* =========================================
+   CTA CATÁLOGO
+========================================= */
+
+.catalog-cta {
+
+    min-height: 600px;
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    color: var(--color-white);
+
+    background-image:
+        url('../images/hero/cta.jpg');
+
+    background-size: cover;
+
+    background-position: center;
+
+}
+
+.catalog-cta-overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        rgba(0, 0, 0, 0.6);
+
+}
+
+.catalog-cta-content {
+
+    position: relative;
+
+    z-index: 1;
+
+    width: min(
+        90%,
+        750px
+    );
+
+}
+
+.catalog-cta-content h2 {
+
+    font-family: var(--font-title);
+
+    font-size: clamp(
+        45px,
+        6vw,
+        75px
+    );
+
+    line-height: 1.1;
+
+    font-weight: 500;
+
+    margin: 25px 0;
+
+}
+
+.catalog-cta-content h2 em {
+
+    display: block;
+
+    color: var(--color-rose);
+
+}
+
+.catalog-cta-content p {
+
+    max-width: 600px;
+
+    margin: 0 auto 35px;
+
+    color:
+        rgba(255, 255, 255, 0.8);
+
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 800px) {
+
+    .products-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .product-image {
+
+        height: 450px;
+
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .catalog-hero {
+
+        min-height: 65vh;
+
+    }
+
+    .catalog-hero h1 {
+
+        font-size: 55px;
+
+    }
+
+    .product-image {
+
+        height: 400px;
+
+    }
+
+    .product-content {
+
+        padding: 28px;
+
+    }
+
+    .product-content h2 {
+
+        font-size: 30px;
+
+    }
+
+}
