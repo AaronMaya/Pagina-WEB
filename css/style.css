@@ -130,7 +130,7 @@ button {
 
 .header.scrolled {
 
-    background-color: rgba(247, 242, 236, 0.96);
+    background-color: rgba(219, 187, 147, 0.96);
 
     backdrop-filter: blur(10px);
 
@@ -145,7 +145,7 @@ button {
         1400px
     );
 
-    margin: 10px;
+    margin: px;
 
     min-height: 90px;
 
@@ -265,7 +265,7 @@ button {
     text-align: center;
 
     background-image:
-        url('../images/hero/hero.jpg');
+        url('../images/Galeria/Galeria 1.jpg');
 
     background-size: cover;
 
