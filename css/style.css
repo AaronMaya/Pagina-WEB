@@ -12,7 +12,7 @@
 
     --color-primary: #000000;
 
-    --color-rose: #C98F91;
+    --color-rose: #c98f91;
 
     --color-burgundy: #6B3035;
 
@@ -128,15 +128,20 @@ button {
 
 }
 
+
 .header.scrolled {
 
-    background-color: rgba(219, 187, 147, 0.96);
+    background-color:
+        rgba(219, 187, 147, 0.96);
 
     backdrop-filter: blur(10px);
 
-    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+    box-shadow:
+        0 5px 25px
+        rgba(0, 0, 0, 0.08);
 
 }
+
 
 .navbar {
 
@@ -145,7 +150,7 @@ button {
         1400px
     );
 
-    margin: px;
+    margin: auto;
 
     min-height: 90px;
 
@@ -157,6 +162,7 @@ button {
 
 }
 
+
 .logo img {
 
     width: 200px;
@@ -166,6 +172,7 @@ button {
     object-fit: contain;
 
 }
+
 
 .nav-menu {
 
@@ -179,6 +186,7 @@ button {
 
 }
 
+
 .nav-menu a {
 
     font-size: 13px;
@@ -191,7 +199,12 @@ button {
 
     position: relative;
 
+    color: var(--color-rose);
+
+    transition: var(--transition);
+
 }
+
 
 .nav-menu a::after {
 
@@ -213,11 +226,13 @@ button {
 
 }
 
+
 .nav-menu a:hover::after {
 
     width: 100%;
 
 }
+
 
 .menu-toggle {
 
@@ -231,6 +246,7 @@ button {
 
 }
 
+
 .menu-toggle span {
 
     display: block;
@@ -241,10 +257,9 @@ button {
 
     margin: 5px;
 
-    background-color: var(--color-text);
+    background-color: var(--color-rose);
 
 }
-
 
 /* =========================================
    HERO
@@ -265,7 +280,7 @@ button {
     text-align: center;
 
     background-image:
-        url('../images/Galeria/Galeria 1.jpg');
+        url('../images/Galeria/Galeria\ 1.jpg');
 
     background-size: cover;
 
