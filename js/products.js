@@ -8,16 +8,16 @@ const PRODUCTS = [
         id: "petite",
         name: "Petite",
         category: "tablas",
-        price: 0,
+        price: 190,
         image: "/images/Galeria/Petite.jpg",
         description:
             "Una pequeña experiencia llena de detalles para disfrutar o regalar."
     },
     {
         id: "tabla-pequena",
-        name: "Tabla pequeña",
+        name: "Luxury Chica",
         category: "tablas",
-        price: 0,
+        price: 400,
         image: "/images/Galeria/Peque.jpg",
         description:
             "Una selección ideal para disfrutar de un momento especial en compañía."
@@ -25,9 +25,9 @@ const PRODUCTS = [
 
     {
         id: "tabla-mediana",
-        name: "Tabla mediana",
+        name: "Luxury Mediana",
         category: "tablas",
-        price: 0,
+        price: 700,
         image: "/images/Galeria/Mediana.jpg",
         description:
             "Una experiencia equilibrada para compartir y disfrutar entre varios."
@@ -35,9 +35,9 @@ const PRODUCTS = [
 
     {
         id: "tabla-grande",
-        name: "Tabla grande",
+        name: "Luxury Grande",
         category: "tablas",
-        price: 0,
+        price: 1300,
         image: "/images/Galeria/Galeria 1.jpg",
         description:
             "Una experiencia pensada para compartir grandes momentos con más personas."
@@ -45,9 +45,9 @@ const PRODUCTS = [
 
     {
         id: "mini-vasos",
-        name: "Mini vasos",
+        name: "Mini Vasos",
         category: "tablas",
-        price: 0,
+        price: 120,
         image: "/images/Galeria/Antojo.jpg",
         description:
             "Una presentación práctica y original para acompañar tus celebraciones."
@@ -55,7 +55,7 @@ const PRODUCTS = [
 
     {
         id: "mini-domos",
-        name: "Mini domos",
+        name: "Mini Domos",
         category: "tablas",
         price: 0,
         image: "../images/tablas/mini-domos.jpg",
