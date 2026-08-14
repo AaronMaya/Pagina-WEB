@@ -1,0 +1,697 @@
+/* =========================================
+   CATÁLOGO - HERO
+========================================= */
+
+.catalog-hero {
+
+    min-height: 70vh;
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    color: var(--color-white);
+
+    background-image:
+        url('/images/Galeria/Galeria 1.jpg');
+
+    background-size: cover;
+
+    background-position: center;
+
+}
+
+.catalog-hero-overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        rgba(0, 0, 0, 0.5);
+
+}
+
+.catalog-hero-content {
+
+    position: relative;
+
+    z-index: 1;
+
+    width: min(
+        90%,
+        800px
+    );
+
+}
+
+.catalog-hero h1 {
+
+    font-family: var(--font-title);
+
+    font-size: clamp(
+        55px,
+        7vw,
+        90px
+    );
+
+    line-height: 1;
+
+    font-weight: 500;
+
+    margin: 20px 0;
+
+}
+
+.catalog-hero h1 span {
+
+    display: block;
+
+    color: var(--color-rose);
+
+    font-style: italic;
+
+}
+
+.catalog-hero p {
+
+    max-width: 600px;
+
+    margin: auto;
+
+    font-weight: 300;
+
+}
+
+
+/* =========================================
+   INTRO CATÁLOGO
+========================================= */
+
+.catalog-intro {
+
+    text-align: center;
+
+}
+
+.catalog-intro .container {
+
+    max-width: 800px;
+
+}
+
+.catalog-intro h2 {
+
+    margin: 25px 0;
+
+    font-family: var(--font-title);
+
+    font-size: clamp(
+        40px,
+        5vw,
+        65px
+    );
+
+    font-weight: 500;
+
+    line-height: 1.15;
+
+}
+
+.catalog-intro h2 em {
+
+    display: block;
+
+    color: var(--color-rose);
+
+}
+
+.catalog-intro p {
+
+    max-width: 600px;
+
+    margin: auto;
+
+    color: #666;
+
+}
+
+
+/* =========================================
+   PRODUCTOS
+========================================= */
+
+.products {
+
+    background-color:
+        #EFE7DF;
+
+}
+
+.products-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 50px 30px;
+
+}
+
+
+/* =========================================
+   TARJETA DEL PRODUCTO
+========================================= */
+
+.product-card {
+
+    background-color:
+        var(--color-background);
+
+    overflow: hidden;
+
+    transition:
+        transform 0.4s ease,
+        box-shadow 0.4s ease;
+
+}
+
+.product-card:hover {
+
+    transform:
+        translateY(-8px);
+
+    box-shadow:
+        0 20px 50px
+        rgba(0, 0, 0, 0.1);
+
+}
+
+
+/* =========================================
+   IMAGEN
+========================================= */
+
+.product-image {
+
+    height: 500px;
+
+    overflow: hidden;
+
+}
+
+.product-image img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition:
+        transform 0.7s ease;
+
+}
+
+.product-card:hover
+.product-image img {
+
+    transform:
+        scale(1.05);
+
+}
+
+
+/* =========================================
+   CONTENIDO
+========================================= */
+
+.product-content {
+
+    padding: 35px;
+
+}
+
+.product-number {
+
+    font-family:
+        var(--font-title);
+
+    color:
+        var(--color-rose);
+
+    font-size: 15px;
+
+}
+
+.product-content h2 {
+
+    margin:
+        8px 0 15px;
+
+    font-family:
+        var(--font-title);
+
+    font-size: 34px;
+
+    font-weight: 500;
+
+}
+
+.product-content p {
+
+    color: #666;
+
+    font-size: 14px;
+
+    max-width: 500px;
+
+    margin-bottom: 25px;
+
+}
+
+
+/* =========================================
+   PRECIO
+========================================= */
+
+.product-price {
+
+    font-family:
+        var(--font-title);
+
+    font-size: 25px;
+
+    font-weight: 500;
+
+    color:
+        var(--color-burgundy);
+
+    margin:
+        20px 0;
+
+}
+
+
+/* =========================================
+   SELECTOR DE CANTIDAD
+========================================= */
+
+.quantity-selector {
+
+    display: flex;
+
+    align-items: center;
+
+    width: fit-content;
+
+    border:
+        1px solid #d8d0c8;
+
+    margin-bottom: 20px;
+
+}
+
+.quantity-selector button {
+
+    width: 40px;
+
+    height: 40px;
+
+    border: none;
+
+    background: transparent;
+
+    font-size: 20px;
+
+    cursor: pointer;
+
+    color:
+        var(--color-text);
+
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease;
+
+}
+
+.quantity-selector button:hover {
+
+    background-color:
+        rgba(219, 187, 147, 0.25);
+
+    color:
+        var(--color-burgundy);
+
+}
+
+.quantity-value {
+
+    width: 45px;
+
+    text-align: center;
+
+    font-size: 14px;
+
+}
+
+
+/* =========================================
+   BOTÓN AGREGAR AL CARRITO
+========================================= */
+
+.add-cart-button {
+
+    width: 100%;
+
+    padding:
+        15px 20px;
+
+    border: none;
+
+    background-color:
+        var(--color-rose);
+
+    color:
+        var(--color-white);
+
+    font-family:
+        var(--font-body);
+
+    font-size: 13px;
+
+    font-weight: 500;
+
+    letter-spacing: 0.8px;
+
+    text-transform: uppercase;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.3s ease,
+        transform 0.3s ease;
+
+}
+
+.add-cart-button:hover {
+
+    background-color:
+        var(--color-burgundy);
+
+    transform:
+        translateY(-2px);
+
+}
+
+
+/* =========================================
+   ENLACE DEL CARRITO
+========================================= */
+
+.cart-link {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+}
+
+
+/* =========================================
+   CONTADOR DEL CARRITO
+========================================= */
+
+.cart-count {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 20px;
+
+    height: 20px;
+
+    border-radius: 50%;
+
+    background-color:
+        var(--color-burgundy);
+
+    color:
+        var(--color-white);
+
+    font-size: 10px;
+
+    font-weight: 500;
+
+}
+
+
+/* =========================================
+   MENSAJE PRODUCTO AGREGADO
+========================================= */
+
+.cart-toast {
+
+    position: fixed;
+
+    bottom: 30px;
+
+    right: 30px;
+
+    z-index: 5000;
+
+    background-color:
+        var(--color-burgundy);
+
+    color:
+        var(--color-white);
+
+    padding:
+        15px 22px;
+
+    font-size: 13px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    transform:
+        translateY(100px);
+
+    opacity: 0;
+
+    transition:
+        transform 0.3s ease,
+        opacity 0.3s ease;
+
+}
+
+.cart-toast.show {
+
+    transform:
+        translateY(0);
+
+    opacity: 1;
+
+}
+
+
+/* =========================================
+   CTA CATÁLOGO
+========================================= */
+
+.catalog-cta {
+
+    min-height: 600px;
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    color:
+        var(--color-white);
+
+    background-image:
+        url('../images/hero/cta.jpg');
+
+    background-size: cover;
+
+    background-position: center;
+
+}
+
+.catalog-cta-overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        rgba(0, 0, 0, 0.6);
+
+}
+
+.catalog-cta-content {
+
+    position: relative;
+
+    z-index: 1;
+
+    width: min(
+        90%,
+        750px
+    );
+
+}
+
+.catalog-cta-content h2 {
+
+    font-family:
+        var(--font-title);
+
+    font-size: clamp(
+        45px,
+        6vw,
+        75px
+    );
+
+    line-height: 1.1;
+
+    font-weight: 500;
+
+    margin: 25px 0;
+
+}
+
+.catalog-cta-content h2 em {
+
+    display: block;
+
+    color:
+        var(--color-rose);
+
+}
+
+.catalog-cta-content p {
+
+    max-width: 600px;
+
+    margin:
+        0 auto 35px;
+
+    color:
+        rgba(255, 255, 255, 0.8);
+
+}
+
+
+/* =========================================
+   RESPONSIVE - TABLET
+========================================= */
+
+@media (max-width: 800px) {
+
+    .products-grid {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+    .product-image {
+
+        height: 450px;
+
+    }
+
+}
+
+
+/* =========================================
+   RESPONSIVE - MÓVIL
+========================================= */
+
+@media (max-width: 600px) {
+
+    .catalog-hero {
+
+        min-height: 65vh;
+
+    }
+
+    .catalog-hero h1 {
+
+        font-size: 55px;
+
+    }
+
+    .product-image {
+
+        height: 400px;
+
+    }
+
+    .product-content {
+
+        padding: 28px;
+
+    }
+
+    .product-content h2 {
+
+        font-size: 30px;
+
+    }
+
+    .product-price {
+
+        font-size: 22px;
+
+    }
+
+    .add-cart-button {
+
+        padding:
+            14px 15px;
+
+        font-size: 12px;
+
+    }
+
+    .cart-toast {
+
+        left: 20px;
+
+        right: 20px;
+
+        bottom: 20px;
+
+        justify-content: center;
+
+        text-align: center;
+
+    }
+
+}

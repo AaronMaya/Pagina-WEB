@@ -1,0 +1,505 @@
+/* =========================================
+   PÁGINA CARRITO
+========================================= */
+
+.cart-page {
+
+    padding-top: 130px;
+
+    min-height: 100vh;
+
+    background-color:
+        var(--color-background);
+
+}
+
+.cart-section {
+
+    padding: 60px 20px 100px;
+
+}
+
+.cart-container {
+
+    width: min(
+        100%,
+        900px
+    );
+
+    margin: auto;
+
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.cart-header {
+
+    text-align: center;
+
+    margin-bottom: 60px;
+
+}
+
+.cart-header span {
+
+    font-size: 11px;
+
+    letter-spacing: 3px;
+
+    color: var(--color-rose);
+
+}
+
+.cart-header h1 {
+
+    font-family: var(--font-title);
+
+    font-size: clamp(
+        45px,
+        6vw,
+        70px
+    );
+
+    font-weight: 500;
+
+    margin: 15px 0;
+
+}
+
+.cart-header p {
+
+    color: #777;
+
+}
+
+
+/* =========================================
+   PRODUCTOS
+========================================= */
+
+.cart-items {
+
+    border-top: 1px solid #ddd;
+
+}
+
+.cart-item {
+
+    display: grid;
+
+    grid-template-columns:
+        110px
+        1fr
+        auto;
+
+    gap: 25px;
+
+    align-items: center;
+
+    padding: 25px 0;
+
+    border-bottom: 1px solid #ddd;
+
+}
+
+.cart-item-image {
+
+    width: 110px;
+
+    height: 110px;
+
+    overflow: hidden;
+
+}
+
+.cart-item-image img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+}
+
+.cart-item-info h3 {
+
+    font-family: var(--font-title);
+
+    font-size: 23px;
+
+    font-weight: 500;
+
+    margin-bottom: 8px;
+
+}
+
+.cart-item-price {
+
+    color: var(--color-rose);
+
+    font-size: 14px;
+
+}
+
+
+/* =========================================
+   CANTIDAD
+========================================= */
+
+.cart-item-quantity {
+
+    display: flex;
+
+    align-items: center;
+
+    border: 1px solid #ddd;
+
+    width: fit-content;
+
+    margin-top: 15px;
+
+}
+
+.cart-item-quantity button {
+
+    width: 35px;
+
+    height: 35px;
+
+    border: none;
+
+    background: transparent;
+
+    cursor: pointer;
+
+    font-size: 18px;
+
+}
+
+.cart-item-quantity span {
+
+    width: 35px;
+
+    text-align: center;
+
+    font-size: 13px;
+
+}
+
+.cart-item-total {
+
+    font-family: var(--font-title);
+
+    font-size: 20px;
+
+}
+
+.remove-item {
+
+    display: block;
+
+    margin-top: 10px;
+
+    border: none;
+
+    background: transparent;
+
+    color: #888;
+
+    cursor: pointer;
+
+    font-size: 12px;
+
+}
+
+
+/* =========================================
+   RESUMEN
+========================================= */
+
+.cart-summary {
+
+    padding: 30px 0;
+
+    border-bottom: 1px solid #ddd;
+
+}
+
+.cart-summary > div {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    margin-bottom: 15px;
+
+}
+
+.cart-total {
+
+    font-size: 20px;
+
+    padding-top: 10px;
+
+}
+
+.cart-total strong {
+
+    font-family: var(--font-title);
+
+    font-size: 28px;
+
+    color: var(--color-burgundy);
+
+}
+
+
+/* =========================================
+   ENTREGA
+========================================= */
+
+.delivery-section {
+
+    padding: 50px 0;
+
+}
+
+.delivery-section h2 {
+
+    font-family: var(--font-title);
+
+    font-size: 30px;
+
+    font-weight: 500;
+
+    margin-bottom: 30px;
+
+}
+
+.delivery-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        1fr
+        1fr;
+
+    gap: 20px;
+
+}
+
+.form-group {
+
+    margin-bottom: 25px;
+
+}
+
+.form-group label {
+
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-size: 13px;
+
+    color: #555;
+
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+
+    width: 100%;
+
+    padding: 15px;
+
+    border: 1px solid #ccc;
+
+    background-color: white;
+
+    font-family: var(--font-body);
+
+    font-size: 14px;
+
+    outline: none;
+
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+
+    border-color:
+        var(--color-rose);
+
+}
+
+
+/* =========================================
+   ACCIONES
+========================================= */
+
+.cart-actions {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+}
+
+.continue-shopping {
+
+    color: var(--color-text);
+
+    font-size: 13px;
+
+}
+
+.checkout-button {
+
+    border: none;
+
+    padding: 17px 30px;
+
+    background-color:
+        var(--color-rose);
+
+    color: white;
+
+    font-family: var(--font-body);
+
+    font-size: 13px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.3s ease;
+
+}
+
+.checkout-button:hover {
+
+    background-color:
+        var(--color-burgundy);
+
+}
+
+
+/* =========================================
+   CARRITO VACÍO
+========================================= */
+
+.empty-cart {
+
+    text-align: center;
+
+    padding: 80px 20px;
+
+}
+
+.empty-cart i {
+
+    font-size: 40px;
+
+    color: var(--color-rose);
+
+    margin-bottom: 20px;
+
+}
+
+.empty-cart h2 {
+
+    font-family: var(--font-title);
+
+    font-size: 35px;
+
+    font-weight: 500;
+
+}
+
+.empty-cart p {
+
+    color: #777;
+
+    margin: 15px 0 30px;
+
+}
+
+.empty-cart a {
+
+    display: inline-block;
+
+    padding: 15px 30px;
+
+    background-color:
+        var(--color-rose);
+
+    color: white;
+
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 700px) {
+
+    .cart-item {
+
+        grid-template-columns:
+            80px
+            1fr;
+
+    }
+
+    .cart-item-image {
+
+        width: 80px;
+
+        height: 80px;
+
+    }
+
+    .cart-item-total {
+
+        grid-column: 2;
+
+    }
+
+    .delivery-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .cart-actions {
+
+        flex-direction: column-reverse;
+
+        align-items: stretch;
+
+        text-align: center;
+
+    }
+
+    .checkout-button {
+
+        width: 100%;
+
+    }
+
+}
