@@ -805,18 +805,6 @@ function calculateDistanceWithGoogleMaps(address) {
 }
 
 /* =========================================
-   INICIALIZAR (AÑADIR ESTO AL FINAL DE TU FUNCIÓN INICIAL)
-========================================= */
-
-// Tu código ya tenía estas líneas. Solo asegúrate de que se ejecuten después de añadir las nuevas funciones.
-renderCart();
-setMinimumDate();
-setupCheckoutButton();
-
-// Y añade esta nueva llamada para configurar el campo de dirección
-setupAddressAutocomplete();
-
-/* =========================================
    CONFIGURACIÓN DEL AUTOCOMPLETADO (NUEVO)
 ========================================= */
 
@@ -918,3 +906,39 @@ function hideSuggestions() {
         suggestionsContainer.innerHTML = '';
     }
 }
+
+/* =========================================
+   LIMPIAR DATOS DE ENTREGA ANTERIORES
+========================================= */
+
+function resetDeliveryData() {
+
+    localStorage.removeItem("aithanaDeliveryDistance");
+
+    const distanceElement =
+        document.getElementById("delivery-distance");
+
+    const costElement =
+        document.getElementById("delivery-cost");
+
+    if (distanceElement) {
+        distanceElement.textContent = "—";
+    }
+
+    if (costElement) {
+        costElement.textContent = "—";
+    }
+
+}
+
+/* =========================================
+   INICIALIZAR
+========================================= */
+
+resetDeliveryData();
+
+renderCart();
+setMinimumDate();
+setupCheckoutButton();
+setupAddressAutocomplete();
+setupDeliveryMethod();
