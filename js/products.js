@@ -50,8 +50,8 @@ const PRODUCTS = [
         price: 120,
         image: "/images/Galeria/Antojo.jpg",
         description:
-            "Una presentación práctica y original para acompañar tus celebraciones."
-    },
+            "Una presentación práctica y original para acompañar tus celebraciones, esta presentación solo es vendida en 10 unidades."
+},
 
     {
         id: "mini-domos",
@@ -60,7 +60,7 @@ const PRODUCTS = [
         price: 0,
         image: "../images/tablas/mini-domos.jpg",
         description:
-            "Pequeños detalles individuales para sorprender en cualquier ocasión."
+            "Pequeños detalles individuales para sorprender en cualquier ocasión, esta presentación solo es vendida en 10 unidades."
     }
 
 ];
