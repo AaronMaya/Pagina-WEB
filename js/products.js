@@ -8,8 +8,9 @@ const PRODUCTS = [
         id: "petite",
         name: "Petite",
         category: "tablas",
-        price: 190,
+        price: 200,
         image: "/images/Galeria/Petite.jpg",
+        dimensions: "13cm x 13cm",
         description:
             "Una pequeña experiencia llena de detalles para disfrutar o regalar."
     },
@@ -19,8 +20,10 @@ const PRODUCTS = [
         category: "tablas",
         price: 400,
         image: "/images/Galeria/Peque.jpg",
+        dimensions: "16cm x 16cm",
         description:
             "Una selección ideal para disfrutar de un momento especial en compañía."
+        
     },
 
     {
@@ -29,8 +32,8 @@ const PRODUCTS = [
         category: "tablas",
         price: 700,
         image: "/images/Galeria/Mediana.jpg",
-        description:
-            "Una experiencia equilibrada para compartir y disfrutar entre varios."
+        description:"Una experiencia equilibrada para compartir y disfrutar entre varios.",
+        dimensions: "15cm x 30cm"
     },
 
     {
@@ -39,6 +42,7 @@ const PRODUCTS = [
         category: "tablas",
         price: 1300,
         image: "/images/Galeria/Galeria 1.jpg",
+        dimensions: "40cm x 27cm",
         description:
             "Una experiencia pensada para compartir grandes momentos con más personas."
     },
@@ -49,8 +53,9 @@ const PRODUCTS = [
         category: "tablas",
         price: 120,
         image: "/images/Galeria/Antojo.jpg",
+        dimensions: "6cm x 6cm x 12cm",
         description:
-            "Una presentación práctica y original para acompañar tus celebraciones, esta presentación solo es vendida en 10 unidades."
+            "Una presentación práctica y original para acompañar tus celebraciones, pedido minimo de 10 vasitos."
 },
 
     {
@@ -59,8 +64,9 @@ const PRODUCTS = [
         category: "tablas",
         price: 0,
         image: "/images/Galeria/domos.jpg",
+        dimensions: "6.5cm x 6.5cm",
         description:
-            "Pequeños detalles individuales para sorprender en cualquier ocasión, esta presentación solo es vendida en 10 unidades."
+            "Pequeños detalles individuales para sorprender en cualquier ocasión, pedido minimo de 10 piezas."
     }
 
 ];

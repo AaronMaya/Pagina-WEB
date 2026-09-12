@@ -223,13 +223,19 @@ function createProductCard(product, index) {
 
 
             <h2>
-                ${product.name}
-            </h2>
+    ${product.name}
+</h2>
 
 
-            <p>
-                ${product.description}
-            </p>
+<p class="product-dimensions">
+    <i class="fa-solid fa-ruler-combined"></i>
+    ${product.dimensions}
+</p>
+
+
+<p>
+    ${product.description}
+</p>
 
 
             <div class="product-price">
