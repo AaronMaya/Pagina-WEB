@@ -58,7 +58,7 @@ const PRODUCTS = [
         name: "Mini Domos",
         category: "tablas",
         price: 0,
-        image: "../images/tablas/mini-domos.jpg",
+        image: "/images/Galeria/domos.jpg",
         description:
             "Pequeños detalles individuales para sorprender en cualquier ocasión, esta presentación solo es vendida en 10 unidades."
     }
