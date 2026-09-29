@@ -1,0 +1,160 @@
+/* =========================================================
+   PÁGINA DE TÉRMINOS Y PRIVACIDAD
+   ========================================================= */
+
+.legal-page {
+    background-color: var(--color-background);
+}
+
+.legal-hero {
+    padding: 180px 0 90px;
+    text-align: center;
+}
+
+.legal-hero .container {
+    max-width: 850px;
+}
+
+.legal-hero .section-label {
+    justify-content: center;
+}
+
+.legal-hero h1 {
+    margin: 25px 0;
+    font-family: var(--font-title);
+    font-size: clamp(48px, 7vw, 78px);
+    font-weight: 500;
+    line-height: 1.08;
+}
+
+.legal-hero h1 em {
+    color: var(--color-rose);
+    font-style: italic;
+    font-weight: 400;
+}
+
+.legal-hero p {
+    max-width: 680px;
+    margin: 0 auto;
+    color: #666;
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+.legal-content {
+    padding-top: 20px;
+}
+
+.legal-container {
+    max-width: 900px;
+}
+
+.legal-card {
+    padding: 55px 60px;
+    margin-bottom: 35px;
+    background: #fff;
+    border: 1px solid rgba(17, 17, 17, 0.06);
+    box-shadow: 0 15px 45px rgba(17, 17, 17, 0.05);
+}
+
+.legal-number {
+    display: block;
+    margin-bottom: 15px;
+    color: var(--color-gold);
+    font-family: var(--font-title);
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.legal-card h2 {
+    margin-bottom: 25px;
+    font-family: var(--font-title);
+    font-size: clamp(34px, 5vw, 48px);
+    font-weight: 500;
+    line-height: 1.15;
+}
+
+.legal-intro {
+    margin-bottom: 40px;
+    color: #666;
+    font-size: 15px;
+    line-height: 1.9;
+}
+
+.legal-card h3 {
+    margin: 32px 0 10px;
+    color: var(--color-burgundy);
+    font-family: var(--font-title);
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.legal-card p {
+    color: #555;
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+.legal-card ul {
+    margin: 10px 0 20px;
+    padding-left: 25px;
+}
+
+.legal-card li {
+    margin-bottom: 8px;
+    color: #555;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.legal-contact {
+    padding: 55px 30px;
+    text-align: center;
+}
+
+.legal-contact > i {
+    margin-bottom: 20px;
+    color: var(--color-gold);
+    font-size: 30px;
+}
+
+.legal-contact h2 {
+    margin-bottom: 15px;
+    font-family: var(--font-title);
+    font-size: 38px;
+    font-weight: 500;
+}
+
+.legal-contact p {
+    max-width: 600px;
+    margin: 0 auto 30px;
+    color: #666;
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+@media (max-width: 600px) {
+    .legal-hero {
+        padding: 140px 0 65px;
+    }
+
+    .legal-hero h1 {
+        font-size: 46px;
+    }
+
+    .legal-card {
+        padding: 35px 25px;
+    }
+
+    .legal-card h2 {
+        font-size: 34px;
+    }
+
+    .legal-card h3 {
+        font-size: 20px;
+    }
+
+    .legal-contact h2 {
+        font-size: 32px;
+    }
+}
