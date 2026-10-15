@@ -63,7 +63,7 @@ const PRODUCTS = [
         name: "Mini Domos",
         category: "tablas",
         price: 0,
-        image: "/images/Galeria/domos.jpg",
+        image: "/images/Galeria/domos2.jpeg",
         dimensions: "6.5cm x 6.5cm x 7cm",
         description:
             "Pequeños detalles individuales para sorprender en cualquier ocasión, pedido minimo de 10 piezas."
