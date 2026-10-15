@@ -9,7 +9,7 @@ const PRODUCTS = [
         name: "Petite",
         category: "tablas",
         price: 200,
-        image: "/images/Galeria/Petite.jpg",
+        image: "/images/Galeria/Petite2.jpeg",
         dimensions: "13cm x 13cm",
         description:
             "Una pequeña experiencia llena de detalles para disfrutar o regalar."
@@ -52,7 +52,7 @@ const PRODUCTS = [
         name: "Mini Vasos",
         category: "tablas",
         price: 120,
-        image: "/images/Galeria/Antojo.jpg",
+        image: "/images/Galeria/Antojo2.jpeg",
         dimensions: "6cm x 6cm x 12cm",
         description:
             "Una presentación práctica y original para acompañar tus celebraciones, pedido minimo de 10 vasitos."

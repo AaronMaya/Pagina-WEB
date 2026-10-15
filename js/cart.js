@@ -600,7 +600,47 @@ function setupCheckoutButton() {
             const phoneNumber = '5215579788638'; // ¡IMPORTANTE! CAMBIA ESTE NÚMERO POR EL TUYO
 
             // Construir el mensaje del pedido
-            const message = buildWhatsAppMessage();
+            const customerName =
+    document.getElementById('customer-name')?.value.trim();
+
+const customerPhone =
+    document.getElementById('customer-phone')?.value.trim();
+
+
+if (!customerName) {
+
+    alert("Por favor, escribe tu nombre.");
+
+    return;
+
+}
+
+
+if (!customerPhone) {
+
+    alert("Por favor, escribe tu número de teléfono.");
+
+    return;
+
+}
+
+
+if (!/^\d{10}$/.test(customerPhone)) {
+
+    alert(
+        "El número de teléfono debe contener 10 dígitos."
+    );
+
+    return;
+
+}
+
+
+const message =
+    buildWhatsAppMessage(
+        customerName,
+        customerPhone
+    );
 
             // Crear el enlace de WhatsApp
             const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
@@ -615,7 +655,10 @@ function setupCheckoutButton() {
  * Construye el string del mensaje de WhatsApp con todos los detalles del pedido.
  * @returns {string} El mensaje formateado.
  */
-function buildWhatsAppMessage() {
+function buildWhatsAppMessage(
+    customerName,
+    customerPhone
+) {
     // Obtener datos del carrito
     const cart = getCart();
 const cartSubtotal = parseFloat(
@@ -636,9 +679,17 @@ const cartTotal = parseFloat(
     const deliveryTime = document.getElementById('delivery-time')?.value || 'No especificado';
     const orderNotes = document.getElementById('order-notes')?.value || 'Ninguna';
 
-    let message = `¡Hola! Me gustaría realizar el siguiente pedido:\n\n`;
-    message += `*--- MI PEDIDO ---*\n`;
+    let message =
+    `¡Hola! Me gustaría realizar el siguiente pedido:\n\n`;
+message +=
+    `*--- DATOS DEL CLIENTE ---*\n`;
+message +=
+    `👤 Nombre: ${customerName}\n`;
+message +=
+    `📱 Teléfono: ${customerPhone}\n\n`;
 
+message +=
+    `*--- MI PEDIDO ---*\n`;
     // Añadir productos
     cart.forEach(item => {
         message += `🔹 ${item.quantity}x ${item.name} - $${item.price.toFixed(2)} MXN c/u\n`;
