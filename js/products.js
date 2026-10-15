@@ -19,7 +19,7 @@ const PRODUCTS = [
         name: "Luxury Chica",
         category: "tablas",
         price: 400,
-        image: "/images/Galeria/Peque.jpg",
+        image: "/images/Tablas/Chica1.jpeg",
         dimensions: "16cm x 16cm",
         description:
             "Una selección ideal para disfrutar de un momento especial en compañía."
@@ -31,7 +31,7 @@ const PRODUCTS = [
         name: "Luxury Mediana",
         category: "tablas",
         price: 700,
-        image: "/images/Galeria/Mediana.jpg",
+        image: "/images/Tablas/Mediana.jpeg",
         description:"Una experiencia equilibrada para compartir y disfrutar entre varios.",
         dimensions: "15cm x 30cm"
     },
